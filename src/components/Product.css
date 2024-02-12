@@ -1,0 +1,13 @@
+.Product {
+    display: inline-block;
+    width: 30vmax;
+   
+}
+
+.Image{
+    width: 15vmax;
+}
+
+.About {
+    margin-top: 5px;
+}
