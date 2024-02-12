@@ -1,6 +1,9 @@
 .Product {
     display: inline-block;
     width: 30vmax;
+    border: 1px solid black;
+    margin: 1vmax;
+    transition: all, 0.6s;
    
 }
 
@@ -10,4 +13,13 @@
 
 .About {
     margin-top: 5px;
+}
+
+.About > div{
+    margin: 3px;
+}
+
+.Product:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
