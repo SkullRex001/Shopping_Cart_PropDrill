@@ -3,7 +3,8 @@ import './Home.css'
 import Products from './Products'
 import './ProductDiv.css'
 const Home = () => {
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([]);
+    const [cart , setCart] = useState([])
     useEffect(() => {
         async function FetchData() {
             const res = await fetch('https://fakestoreapi.com/products')
@@ -24,7 +25,7 @@ const Home = () => {
             <div className='ProductDiv'>
                     {
                     products.map((product  , index) => {
-                      return  <Products image={product.image} title={product.title} price={product.price}  key={index}/>
+                      return  <Products image={product.image} title={product.title} price={product.price}  key={index} cart={cart} setCart={setCart} id={index}  prodcutsArray={products}/>
                     })
                 } 
             </div>
