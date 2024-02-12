@@ -3,7 +3,8 @@
     justify-content: space-between;
     background-color: aquamarine;
     padding: 2vmax;
-    position: relative;
+    position: fixed;
+   width: 95vw;
     top: 0%;
     
 }
