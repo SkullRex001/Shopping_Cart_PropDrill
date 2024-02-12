@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import './Home.css'
 import Products from './Products'
 import './ProductDiv.css'
-const Home = () => {
+const Home = ({cart , setCart}) => {
     const [products, setProducts] = useState([]);
-    const [cart , setCart] = useState([])
+    
     useEffect(() => {
         async function FetchData() {
             const res = await fetch('https://fakestoreapi.com/products')
