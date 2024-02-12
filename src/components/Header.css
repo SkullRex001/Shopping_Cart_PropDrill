@@ -1,0 +1,24 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    padding: 2vmax;
+    
+}
+.HeaderLink{
+    display: flex;
+    flex-direction: row;
+    gap: 15vmax;
+    
+}
+p{
+    padding: 0px;
+    margin: 0px;
+}
+
+a , a:visited{
+    text-decoration: none;
+    color: black;
+
+}
+
